@@ -1,0 +1,43 @@
+@import '../../../variables.scss';
+
+.radio {
+    margin-top: -0.7rem; 
+    margin-bottom: -0.3rem;
+
+    text-align: left;
+
+    p {
+        margin-bottom: 1.1rem;
+    }
+
+    div {
+        margin-bottom: 0.7rem;
+    }
+
+    label > input[type='radio'] {
+        display: none;
+    }
+
+    label > input[type='radio'] + *::before {
+        box-sizing: border-box;
+        content: '';
+        display: inline-block;
+        vertical-align: text-top;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1.2rem;
+
+        border: 1px solid #d0cfcf;
+        border-radius: 50%;
+    }
+
+    label > input[type='radio']:checked + *::before {
+        background: radial-gradient(
+            $color-blue 0%,
+            $color-blue 40%,
+            transparent 45%,
+            transparent
+        );
+        border-color: $color-blue;
+    }
+}

@@ -1,0 +1,57 @@
+.upload {
+    input[type='file'] {
+        display: none;
+    }
+
+    > div {
+        display: flex;
+        align-items: stretch;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.87);
+        border-radius: 4px 0px 0px 4px;
+        padding: 1.4rem 1.5rem;
+        cursor: pointer;
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        font: inherit;
+        padding: 1.4rem 1.6rem;
+        border: 1px solid #d0cfcf;
+        border-radius: 0 4px 4px 0;
+        background: #f8f8f8;
+        resize: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &.invalid {
+        label {
+            border: solid #cb3d40;
+            border-width: 2px 2px 2px 2px;
+        }
+
+        textarea {
+            border: solid #cb3d40;
+            border-width: 2px 2px 2px 0px;
+        }
+    }
+
+    .error-text {
+        position: absolute;
+        display: block;
+        margin-top: 0.4rem;
+        padding-left: 1.6rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: #cb3d40;
+    }
+}

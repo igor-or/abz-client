@@ -1,0 +1,23 @@
+.tooltip {
+    position: absolute;     
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    gap: 1rem;
+    
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 4px;
+    color: #fff;
+    padding: 0.3rem 1.6rem;
+    cursor: text;     
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip.active {
+    visibility: visible;
+    opacity: 1;
+}

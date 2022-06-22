@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+main {
+    max-width: 117rem;
+    display: flex;
+    flex-direction: column;
+    gap: 14rem;
+    margin-bottom: 10rem;
+
+    @media (min-width: $query-boundary-1170) {
+        margin: 0 auto 10rem;
+    }
+}

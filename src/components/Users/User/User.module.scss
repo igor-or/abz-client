@@ -1,0 +1,22 @@
+@import '../../../variables.scss';
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    text-align: center;
+
+    min-width: 28.2rem;
+    max-width: 37rem;
+
+    > div {
+        width: 100%;
+    }    
+}

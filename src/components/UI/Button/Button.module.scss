@@ -1,0 +1,42 @@
+@import '../../../variables.scss';
+
+$button-hover-color: #ffe302;
+$button-disabled-color: #b4b4b4;
+
+.button,
+.button:link,
+.button:visited {
+    font: inherit;
+    border: none;
+    background: $color-yellow;
+
+    color: $color-black87;
+    padding: 0.4rem 0;
+    width: 10rem;
+    cursor: pointer;
+    border-radius: 80px;
+    transition: all 0.3s;
+
+    &.wide {
+        width: 12rem;
+    }
+
+    &:hover,
+    &:active {
+        background: $button-hover-color;
+        border-color: $button-hover-color;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled,
+    &:focus:disabled,
+    &:hover:disabled,
+    &:active:disabled {
+        background: $button-disabled-color;
+        color: white;
+        cursor: not-allowed;
+    }
+}

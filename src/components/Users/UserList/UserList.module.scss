@@ -1,0 +1,30 @@
+@import '../../../variables.scss';
+
+.users-list {
+    @include flex-container;
+
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        @media (min-width: $query-boundary-768) {
+            gap: 1.6rem;
+        }
+
+        @media (min-width: $query-boundary-1024) {
+            gap: 2.9rem;
+        }
+
+        > * {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+        }
+    }
+
+    > button {
+        margin: 0 auto;
+    }
+}

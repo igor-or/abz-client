@@ -1,0 +1,35 @@
+.input {
+    vertical-align: top;
+    input {
+        display: block;
+        font: inherit;
+        padding: 1.4rem;
+        border: 1px solid #d0cfcf;
+        border-radius: 4px;
+        background-color: white;
+    }
+
+    &.invalid {
+        input {
+            border: 2px solid #cb3d40;
+        }
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .helper-text {
+        position: absolute;
+        display: block;
+        margin-top: 0.4rem;
+        padding-left: 1.6rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: #7e7e7e;
+
+        &.error-text {
+            color: #cb3d40;
+        }
+    }
+}

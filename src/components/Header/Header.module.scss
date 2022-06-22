@@ -1,0 +1,34 @@
+@import '../../variables.scss';
+
+.header {
+    width: 100%;
+    height: 6rem;
+    padding: 1.3rem 1.6rem;
+
+    @media (min-width: $query-boundary-768) {
+        padding: 1.3rem 3.2rem;
+    }
+
+    @media (min-width: $query-boundary-1024) {
+        padding: 1.3rem 6rem;
+    }
+
+    @media (min-width: $query-boundary-1170) {
+        padding: 1.3rem calc((100% - 117rem) / 2);
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    .button-group {
+        display: flex;
+        gap: 1rem;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}

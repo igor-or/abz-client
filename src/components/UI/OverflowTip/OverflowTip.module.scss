@@ -1,0 +1,9 @@
+.hidden-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.overflowed {
+    cursor: pointer;
+}
